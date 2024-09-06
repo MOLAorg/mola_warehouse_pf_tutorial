@@ -12,6 +12,12 @@
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
+  <exec_depend>mvsim</exec_depend>
+  <exec_depend>mrpt_map_server</exec_depend>
+  <exec_depend>mrpt_pf_localization</exec_depend>
+  <exec_depend>mrpt_pointcloud_pipeline</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>
