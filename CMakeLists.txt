@@ -15,6 +15,7 @@ install(DIRECTORY
   maps
   params
   rviz
+  fox-glove
   DESTINATION share/${PROJECT_NAME}/
 )
 

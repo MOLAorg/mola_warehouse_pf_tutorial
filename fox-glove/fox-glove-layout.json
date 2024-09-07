@@ -1,0 +1,212 @@
+{
+  "configById": {
+    "3D!18i6zy7": {
+      "layers": {
+        "845139cb-26bc-40b3-8161-8ab60af4baf5": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "Grid",
+          "instanceId": "845139cb-26bc-40b3-8161-8ab60af4baf5",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "order": 1
+        }
+      },
+      "cameraState": {
+        "perspective": true,
+        "distance": 12.604988194331135,
+        "phi": 61.40848177168528,
+        "thetaOffset": 120.1942452634932,
+        "targetOffset": [
+          1.3511440038354783,
+          0.07333706251907562,
+          -1.0667364838051414e-16
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "followTf": "odom",
+      "scene": {
+        "enableStats": false,
+        "ignoreColladaUpAxis": false,
+        "transforms": {
+          "labelSize": 0.03,
+          "axisScale": 0.681
+        }
+      },
+      "transforms": {},
+      "topics": {
+        "/rslidar_points": {
+          "visible": true,
+          "pointSize": 5,
+          "colorField": "ring",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/corridor_detection_points": {
+          "visible": true,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo",
+          "pointShape": "square",
+          "pointSize": 3
+        },
+        "/viz_detected_corridor": {
+          "visible": true
+        },
+        "/waypoints_visualization": {
+          "visible": true
+        },
+        "/front_points": {
+          "visible": true,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo",
+          "pointSize": 6.62
+        },
+        "/rear_points": {
+          "visible": false,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo",
+          "pointSize": 5.59
+        },
+        "/local_map_pointcloud": {
+          "visible": false,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/mrpt_map/points_map_points": {
+          "visible": false,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/pf_pose": {
+          "visible": true
+        },
+        "/particlecloud": {
+          "visible": true,
+          "axisScale": 0.1
+        },
+        "/pf_input_points": {
+          "visible": true,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo",
+          "pointSize": 8.75
+        },
+        "/os_cloud_node/points": {
+          "visible": true,
+          "colorField": "intensity",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/alphasense_driver_ros/cam0/compressed": {
+          "visible": false
+        },
+        "/viz_lookahead_line": {
+          "visible": false
+        },
+        "/marker": {
+          "visible": true
+        },
+        "/ouster/range_image": {
+          "visible": false
+        },
+        "/ouster/nearir_image": {
+          "visible": false
+        },
+        "/ouster/points": {
+          "visible": true,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo",
+          "pointSize": 4
+        },
+        "/points2": {
+          "visible": true,
+          "colorField": "rgb",
+          "colorMode": "rgb",
+          "colorMap": "turbo",
+          "pointSize": 6
+        },
+        "/cam1": {
+          "visible": true
+        },
+        "/cam1/image_raw": {
+          "visible": true,
+          "frameLocked": true,
+          "cameraInfoTopic": "/cam1/camera_info",
+          "distance": 1,
+          "planarProjectionFactor": 0,
+          "color": "#ffffff"
+        },
+        "/cam1/camera_info": {
+          "visible": true
+        },
+        "/chassis_markers": {
+          "visible": true
+        },
+        "/lidar1_points": {
+          "visible": true,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/mrpt_map/filtered_points": {
+          "visible": true,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/mrpt_map/gridmap_gridmap": {
+          "visible": false
+        }
+      },
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {}
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": "3D!18i6zy7"
+}
