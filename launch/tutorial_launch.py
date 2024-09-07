@@ -78,7 +78,7 @@ def generate_launch_description():
             'log_level': 'INFO',
             'pipeline_yaml_file': os.path.join(
                 mola_warehouse_pkg_share, 'params', 'point-cloud-pipeline.yaml'),
-            'points_topic_name': '/rslidar_points',
+            'points_topic_name': '/lidar1_points',
             'filter_output_layer_name': 'output_for_pf',
             'filter_output_topic_name': '/pf_input_points',
             'time_window': '0.20',

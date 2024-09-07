@@ -7,7 +7,7 @@ Panels:
         - /Global Options1
         - /Status1
         - /TF1/Tree1
-        - /global map1/Topic1
+        - /global map (points)1/Topic1
       Splitter Ratio: 0.5
     Tree Height: 746
   - Class: rviz_common/Selection
@@ -83,6 +83,8 @@ Visualization Manager:
           Value: true
         lidar1_points:
           Value: true
+        map:
+          Value: true
         odom:
           Value: true
         scanner1:
@@ -93,16 +95,17 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        odom:
-          base_link:
-            base_footprint:
-              {}
-            cam1:
-              {}
-            lidar1_points:
-              {}
-            scanner1:
-              {}
+        map:
+          odom:
+            base_link:
+              base_footprint:
+                {}
+              cam1:
+                {}
+              lidar1_points:
+                {}
+              scanner1:
+                {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -190,8 +193,8 @@ Visualization Manager:
       Max Color: 255; 255; 255
       Max Intensity: 6.402095317840576
       Min Color: 0; 0; 0
-      Min Intensity: -0.24784283339977264
-      Name: global map
+      Min Intensity: -0.24708665907382965
+      Name: global map (points)
       Position Transformer: XYZ
       Selectable: true
       Size (Pixels): 1
@@ -207,6 +210,29 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
+    - Alpha: 0.699999988079071
+      Binary representation: false
+      Binary threshold: 100
+      Class: rviz_default_plugins/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: false
+      Name: global map (grid)
+      Topic:
+        Depth: 5
+        Durability Policy: Transient Local
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /mrpt_map/gridmap_gridmap
+      Update Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /mrpt_map/gridmap_gridmap_updates
+      Use Timestamp: false
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -253,25 +279,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 24.826263427734375
+      Distance: 43.00162887573242
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.6062837839126587
-        Y: 1.1585302352905273
-        Z: 0.7068352699279785
+        X: 9.128826141357422
+        Y: 9.950052261352539
+        Z: -2.7825629711151123
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.7297972440719604
+      Pitch: 0.7997971773147583
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.943580150604248
+      Yaw: 4.8335676193237305
     Saved: ~
 Window Geometry:
   Displays:
