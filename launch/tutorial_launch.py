@@ -38,6 +38,10 @@ def generate_launch_description():
             # 'topic_sensors_2d_scan': '/laser1',
             'topic_sensors_point_clouds': '/pf_input_points',
 
+            # The robot starts at the map origin:
+            'pf_params_overrides_file': os.path.join(
+                mola_warehouse_pkg_share, 'params', 'pf-initial-pose.yaml'),
+
             # For robots with wheels odometry, use:     'base_link'-> 'odom'      -> 'map'
             # For systems without wheels odometry, use: 'base_link'-> 'base_link' -> 'map'
             'base_link_frame_id': 'base_link',
